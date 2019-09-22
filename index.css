@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  background: #063900;
+  color: white;
+ /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #1e1f26;
+  color: white;
+  min-height: 40px;
+}
+
+.nav-link {
+  margin: 0 10px;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects {
+  padding: 30px 15px;
+  background-color: #333333;
+  width: 100%;
+}
+
+.grid {
+  max-width: 100%;
+  display: grid;
+  /* https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+  margin: 10px auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: white;
+  margin: 10px auto;
+}
+
+a {
+  margin-bottom: 40px
+}
+
+#project-tile {
+  width: 300px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 585px) {
+  img {
+    width: 90%;
+    height: 90%;
+  }
+}
